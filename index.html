@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+   
+    <script src="script.js"></script>
+   
+    <title>Página de conversão</title>
+</head>
+<body>
+    <section>
+            <h1>🌡️ Converta aqui </h1>
+            <p>Escolha sua opção</p>
+            <select id="selecao" name="opcaoDeSelecao">
+    
+              <option value="0">Selecione uma opção </option>
+              <optgroup label="Temperatura">
+                <option value="1">Celsius para Fahrenheit</option>
+                <option value="2">Celsius para Kelvin</option>
+                <option value="3">Fahrenheit para Celsius</option>
+                <option value="4">Fahrenheit para Kelvin</option>
+                <option value="5">Kelvin para Celsius</option>
+                <option value="6">Kelvin para Fahrenheit</option>
+              </optgroup>        
+            </select><br/>
+            
+            <button type="button" value="start" name="start" id="start" onclick="start()">START</button>
+          <!-- </section>
+    
+          <section> -->
+            <!-- <a href="#paginaInicial">
+                <img src="https://images.vexels.com/media/users/3/141104/isolated/preview/57003a56b5f8470651295adb4b7be139-atualizar-sinal-de-seta-by-vexels.png" alt="" class="seta">
+            </a>   -->
+            <h1 id="tituloConversor">Digite aqui o valor que você deseja converter</h1>
+            <p id="paragrafo"></p>
+            <form>
+              <input type="text" id="valor" placeholder="Digite o valor"></input><br/>
+              <button type="button" value="converter" name="converter" id="converter" onclick="escolha()">CONVERTER</button>
+            </form>
+            <div class="resultado">
+              <p id="resultadoNaTela"></p>
+            </div>
+        </section>
+
+
+    </section>
+
+    
+</body>
+</html>
